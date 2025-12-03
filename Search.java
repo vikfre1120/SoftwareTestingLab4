@@ -1,13 +1,25 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 class Search {
-    public static int binarySearch(int[] arr, int target) {
-        int left = 0;
-        int right = arr.length - 1;
+    public static void main(String[] args) {
+        String searchString = args[0];
+        String filePath = args[1];
+        System.out.println(filePath);
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+            
+            String line = reader.readLine();
+            while(line != null){
+                if (line.contains(searchString)) {
+                System.out.println(line);
+            } 
+            line = reader.readLine();
+            }
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-
-
-        int augusta = 9;
-
-        //viktor gillar augusta
-        return -1; // Target not found
     }
 }   
