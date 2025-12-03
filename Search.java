@@ -6,6 +6,8 @@ class Search {
 
 
         int augusta = 9;
+
+        //viktor gillar augusta
         return -1; // Target not found
     }
 }   
