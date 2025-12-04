@@ -1,7 +1,5 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-//hej
-//en till kommentar
 class Search {
     public static void main(String[] args) {
         if (args.length < 2) {
