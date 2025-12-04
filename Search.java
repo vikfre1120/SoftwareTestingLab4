@@ -1,8 +1,11 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
-
 class Search {
     public static void main(String[] args) {
+        if (args.length < 2) {
+            System.out.println("To few arguments. Usage: java Search <searchString> <filePath>");
+            return;
+        }
         String searchString = args[0];
         String filePath = args[1];
         System.out.println(filePath);
@@ -20,6 +23,5 @@ class Search {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }   
